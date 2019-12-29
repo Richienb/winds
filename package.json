@@ -8,7 +8,8 @@
     "main": "index.js",
     "files": [
         "index.js",
-        "index.d.ts"
+        "index.d.ts",
+        "lib/**/*"
     ],
     "engines": {
         "node": ">=8"
@@ -18,7 +19,11 @@
         "test": "yarn lint && ava"
     },
     "keywords": [],
-    "dependencies": {},
+    "dependencies": {
+        "command-exists": "^1.2.8",
+        "execa": "^4.0.0",
+        "neat-csv": "^5.1.0"
+    },
     "devDependencies": {
         "ava": "^2.4.0",
         "eslint-config-richienb": "^0.2.3",

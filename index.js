@@ -1,7 +1,11 @@
 "use strict"
 
-module.exports = (input, { postfix = "rainbows" } = {}) => {
-    if (typeof input !== "string") throw new TypeError(`Expected a string, got ${typeof input}`)
+const platform = require("os").platform()
 
-    return `${input} & ${postfix}`
+module.exports = () => {
+    if (platform === "win32") {
+        return require("./lib/windows")()
+    } else if (platform === "darwin") {
+        return require("./lib/macos")()
+    }
 }
