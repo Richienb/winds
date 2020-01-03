@@ -1,6 +1,6 @@
 {
     "name": "winds",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Get a list of running applications.",
     "repository": "https://github.com/Richienb/winds.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
