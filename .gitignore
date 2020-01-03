@@ -1,3 +1,6 @@
+# LF Endings to fix Travis CI Windows build
+*.js text eol=lf
+
 # Visual Studio Code
 
 .vscode/*
