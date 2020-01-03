@@ -1,14 +1,15 @@
 /**
- * My awesome module.
- * @param input Lorem ipsum.
- * @param postfix Lorem ipsum.
+ * Get a list of running applications.
  * @example
  * ```
- * const theModule = require("the-module");
- * theModule("unicorns");
- * //=> 'unicorns & rainbows'
+ * const winds = require("winds");
+ *
+ * (async () => {
+ *     await winds()
+ *     //=> ['Richienb/winds: Get a list of running applications. - Google Chrome', 'index.js - winds - Visual Studio Code']
+ * })()
  * ```
 */
-declare function theModule(input: string, { postfix }: { postfix?: string }): string;
+declare function winds(): Promise<string[]>;
 
-export = theModule;
+export = winds;

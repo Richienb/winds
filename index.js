@@ -3,13 +3,8 @@
 const platform = require("os").platform()
 
 module.exports = (() => {
-    if (platform === "win32") {
-        return require("./lib/windows")
-    } else if (platform === "darwin") {
-        return require("./lib/macos")
-    } else if (platform === "linux" || platform === "cygwin") {
-        return require("./lib/linux")
-    } else {
-        throw new Error(`${platform} is not supported!`)
-    }
+    if (platform === "win32") return require("./lib/windows" || platform === "cygwin")
+    if (platform === "darwin") return require("./lib/macos")
+    if (platform === "linux") return require("./lib/linux")
+    throw new Error(`${platform} is not supported!`)
 })()

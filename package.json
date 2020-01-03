@@ -1,8 +1,8 @@
 {
-    "name": "the-module",
+    "name": "winds",
     "version": "0.0.0",
-    "description": "My awesome module.",
-    "repository": "https://github.com/Richienb/the-module.git",
+    "description": "Get a list of running applications.",
+    "repository": "https://github.com/Richienb/winds.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
     "license": "MIT",
     "main": "index.js",
@@ -12,19 +12,32 @@
         "lib/**/*"
     ],
     "engines": {
-        "node": ">=8"
+        "node": ">=10"
     },
     "scripts": {
         "lint": "xo",
         "test": "yarn lint && ava"
     },
-    "keywords": [],
+    "keywords": [
+        "window",
+        "screen",
+        "retrieve",
+        "windows",
+        "find",
+        "view",
+        "list",
+        "running",
+        "visible",
+        "open",
+        "active"
+    ],
     "dependencies": {
         "command-exists": "^1.2.8",
         "execa": "^4.0.0",
         "neat-csv": "^5.1.0"
     },
     "devDependencies": {
+        "@sindresorhus/is": "^1.2.0",
         "ava": "^2.4.0",
         "eslint-config-richienb": "^0.2.3",
         "xo": "^0.25.3"
