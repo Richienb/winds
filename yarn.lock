@@ -1202,7 +1202,7 @@ crypto-random-string@^1.0.0:
   resolved "https://registry.yarnpkg.com/crypto-random-string/-/crypto-random-string-1.0.0.tgz#a230f64f568310e1498009940790ec99545bca7e"
   integrity sha1-ojD2T1aDEOFJgAmUB5DsmVRbyn4=
 
-csv-parser@^2.3.0:
+csv-parser@^2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/csv-parser/-/csv-parser-2.3.2.tgz#3a4146abb9a0be7c3cbcae9c289f0a7e622dc07b"
   integrity sha512-ggurTYuhhoUJyrPXTAkiO1x6QXkxAoimV+YSz2eSAXF+jQ/Xve/030T34tVStKFmX56pPtY5PiZl3bR4HkZK+Q==
@@ -3300,11 +3300,11 @@ ndjson@^1.4.0:
     through2 "^2.0.3"
 
 neat-csv@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/neat-csv/-/neat-csv-5.1.0.tgz#521492a49dfed1577b3fc3cf7397c81e802659bb"
-  integrity sha512-P5rOGmHN6P/h0ZxEnVUhSuOMcyv2X95Q+dQxMEvqg+Qb0tw8VmHuhQmNFNv1xjD4+OCD1oWKN5rC022gGULXcA==
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/neat-csv/-/neat-csv-5.2.0.tgz#7c93c7d98dea8e29971bd9c52e0435cf9fdd939e"
+  integrity sha512-JMbn4RPKo1heWhDihK9kbffxkDdd2uFSk30t3YOz1u3gsbIGhGUNlmGGa5H9yySLie3qU4lsLwrxQyirExD71A==
   dependencies:
-    csv-parser "^2.3.0"
+    csv-parser "^2.3.2"
     get-stream "^5.1.0"
     to-readable-stream "^2.1.0"
 
